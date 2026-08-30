@@ -19,8 +19,8 @@
     <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="new-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="new-icon.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 
@@ -265,8 +265,30 @@ setInterval(updateCountdown, 1000);
                 <p>Ayúdanos a capturar nuestra historia de amor. Etiqueta tus fotos de instagram con el hashtag 
                     <a href="https://instagram.com/explore/tags/esaulybrendita/" target="_blank">#EsaulyBrendita</a>
                 </p>
+                
+                
+
+                <p> También agrega tus fotos a nuestro álbum compartido en Google Photos. Lee este QR para ir ahí </p>
+
+                <img src="img/qr.png" class="qr-code" alt="QR Google Photos" width="200" height="200">
             </div>
         </div>
+
+        <style>
+.qr-code {
+  width: 200px;
+  height: 200px;
+  min-width: 200px; /* prevents flex/grid from squeezing it */
+  min-height: 200px;
+  flex-shrink: 0; /* important if inside .row which is flex */
+  object-fit: contain; /* never crop a QR */
+  display: block;
+  margin: 15px auto; /* centers it because of text-center */
+  image-rendering: pixelated; /* keeps QR sharp */
+  border-radius: 0; /* don't round a QR */
+}
+</style>
+        
         <div class="row section-border wp7">
             <div class="col-md-4 col-md-offset-4">
                 <img src="https://pbs.twimg.com/media/EbDD5MpXQAAstte.jpg">
@@ -490,7 +512,7 @@ setInterval(updateCountdown, 1000);
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <img src="img/Nyx.jpeg" class="mi-imagen" alt="Descripción">
+                <img src="img/Nyx.jpeg" class="mi-imagen" alt="Fotos de Nyx">
 
 <style>
 .mi-imagen {
