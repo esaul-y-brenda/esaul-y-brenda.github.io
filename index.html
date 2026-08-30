@@ -124,6 +124,54 @@
     </div>
 </section>
 
+<div id="countdown">
+  <div class="box"><span id="days">00</span><small>DÍAS</small></div>
+  <div class="box"><span id="hours">00</span><small>HORAS</small></div>
+  <div class="box"><span id="minutes">00</span><small>MIN</small></div>
+  <div class="box"><span id="seconds">00</span><small>SEG</small></div>
+</div>
+
+<style>
+#countdown {
+  display: flex; gap: 12px; justify-content: center;
+  font-family: system-ui, sans-serif;
+}
+#countdown .box {
+  background: #111; color: #fff; border-radius: 16px;
+  padding: 16px 18px; min-width: 80px; text-align: center;
+}
+#countdown span { display: block; font-size: 32px; font-weight: 700; line-height: 1; }
+#countdown small { opacity: 0.7; font-size: 11px; letter-spacing: 1px; }
+</style>
+
+<script>
+// ¡CAMBIA ESTO! Pon fecha de tu evento. Formato ISO con zona horaria de España
+const eventDate = new Date('2027-01-02T17:30:00-06:00').getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const diff = eventDate - now;
+
+  if (diff <= 0) {
+    document.getElementById('countdown').innerHTML = "<h2>¡Ya es el día!</h2>";
+    return;
+  }
+
+  const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById('days').innerText = String(d).padStart(2, '0');
+  document.getElementById('hours').innerText = String(h).padStart(2, '0');
+  document.getElementById('minutes').innerText = String(m).padStart(2, '0');
+  document.getElementById('seconds').innerText = String(s).padStart(2, '0');
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+
 <section id="intro">
     <div class="container">
         <div class="row">
@@ -442,6 +490,16 @@
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                <img src="img/Nyx.jpeg" class="mi-imagen" alt="Descripción">
+
+<style>
+.mi-imagen {
+  width: 200px; /* cámbialo al tamaño que quieras */
+  height: 200px;
+  object-fit: cover; /* evita que se estire */
+  border-radius: 20px; /* redondeo */
+}
+</style>
                 <p>Hecho por Nyx con mucho <span class="fa fa-heart pulse2"></span> hacia Brendita y Esaul (pero más a Brendita) </p>
             </div>
         </div>
