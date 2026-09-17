@@ -351,3 +351,603 @@ header .member-actions a {
         font-size: 12px;
     }
 }
+
+/* INTRO */
+
+.story-section {
+    padding: 90px 0;
+    background: #faf8f6;
+}
+
+.story-kicker {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+    margin-bottom: 8px;
+    opacity: 0.6;
+}
+
+.story-row {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.story-card {
+    background: #ffffff;
+    padding: 40px 45px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.story-card p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.story-ending {
+    margin-bottom: 0 !important;
+    font-style: italic;
+}
+
+.story-divider {
+    font-size: 27px;
+    margin: 25px 0;
+    opacity: 0.7;
+}
+
+.story-photo {
+    width: 100%;
+    max-width: 230px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.story-name {
+    margin-top: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.mobile-story-photos {
+    margin-top: 35px;
+}
+
+@media (max-width: 991px) {
+
+    .story-row {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .story-card {
+        padding: 30px 24px;
+    }
+
+    .story-photo {
+        height: 250px;
+        max-width: 190px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .story-section {
+        padding: 65px 0;
+    }
+
+    .story-card p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .story-photo {
+        height: 210px;
+    }
+}
+
+
+/* COUNTDOWN */
+
+#save-the-date {
+    position: relative;
+    min-height: 720px;
+    background-image: url("../img/corre.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.save-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 70px 20px;
+    color: #fdf8ee;
+}
+
+/* Título */
+.save-title {
+    margin: 0;
+    font-family: "Great Vibes", cursive;
+    font-size: 80px;
+    font-weight: 400;
+    color: #f1d28a; /* dorado cálido */
+}
+
+/* Fecha */
+.save-date {
+    margin: 10px 0 55px;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: #f6e3b4; /* crema doradito */
+}
+
+/* Contador */
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Cajas */
+.count-box {
+    width: 170px;
+    height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(214, 167, 72, 0.82); /* amarillo/ámbar */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.count-box span {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.count-box small {
+    margin-top: 12px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+/* Números */
+.count-box span {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1;
+    color: #f8d98b;
+}
+
+/* Etiquetas */
+.count-box small {
+    margin-top: 12px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff6df;
+}
+
+/* Calendario */
+.calendar-section {
+    margin-top: 65px;
+}
+
+.calendar-section h3 {
+    margin-bottom: 35px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #f7f1e3;
+}
+
+/* Botones */
+.calendar-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.calendar-btn {
+    display: inline-block;
+    min-width: 320px;
+    padding: 17px 30px;
+    border: 2px solid rgba(241, 210, 138, 0.45);
+    border-radius: 40px;
+    color: #fff8e8;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    background: rgba(70, 100, 75, 0.25);
+    transition: all .3s ease;
+}
+
+.calendar-btn:hover {
+    color: #2f4a34;
+    background: rgba(241, 210, 138, 0.9);
+    border-color: #e8c36a;
+    text-decoration: none;
+}
+
+/* CODIGO DE VESTIMENTA*/
+.dress-code-section {
+    position: relative;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    /* rompe el límite del container padre */
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    background-image: url("../img/relleno.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+
+/* oscurece el fondo */
+.dress-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.48);
+
+    z-index: 1;
+}
+
+
+/* contenido */
+.dress-content {
+    position: relative;
+    z-index: 2;
+     width: 100%;
+}
+
+
+/* título */
+.dress-title {
+    margin: 0;
+
+    font-family: "Great Vibes", cursive;
+    font-size: 70px;
+    font-weight: 400;
+
+    color: #ffffff;
+
+    text-shadow: 0 3px 12px rgba(0,0,0,0.45);
+}
+
+
+/* Formal */
+.dress-subtitle {
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    font-size: 28px;
+    color: #ffffff;
+}
+
+
+/* pequeño texto */
+.dress-text {
+    margin-bottom: 45px;
+
+    font-size: 16px;
+    color: rgba(255,255,255,0.9);
+}
+
+
+/* imágenes */
+.dress-examples {
+    margin-top: 25px;
+}
+
+
+.dress-card {
+    background: #ffffff;
+
+    padding: 20px;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,0.22);
+}
+
+
+.dress-card img {
+    width: 100%;
+    height: 520px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* celular */
+@media (max-width: 767px) {
+
+    .dress-code-section {
+        padding: 55px 0 65px;
+    }
+
+    .dress-title {
+        font-size: 50px;
+    }
+
+    .dress-subtitle {
+        font-size: 23px;
+    }
+
+    .dress-card {
+        margin-bottom: 20px;
+    }
+
+    .dress-card img {
+        height: 380px;
+    }
+}
+
+/* FOTOS */
+
+.social-section {
+    padding: 80px 0;
+    background: #faf8f3;
+}
+
+.social-card {
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+.social-photo {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+}
+
+.social-content {
+    padding: 45px 50px 40px;
+}
+
+.social-content h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.social-content p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.wedding-hashtag {
+    display: inline-block;
+    margin: 10px 0 30px;
+
+    font-size: 26px;
+    font-weight: 600;
+
+    color: #b88a38;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.wedding-hashtag:hover {
+    color: #7d9a72;
+    text-decoration: none;
+}
+
+.album-box {
+    max-width: 440px;
+
+    margin: 10px auto 30px;
+    padding: 30px 25px;
+
+    background: #f5f1e7;
+
+    border: 1px solid rgba(184, 138, 56, 0.20);
+}
+
+.qr-text {
+    margin-top: 15px;
+    font-size: 14px !important;
+    font-weight: 600;
+}
+
+.qr-code {
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+
+    display: block;
+    margin: 20px auto 0;
+
+    image-rendering: pixelated;
+}
+
+.social-ending {
+    margin-top: 25px;
+
+    font-style: italic;
+
+    color: #777;
+}
+
+
+/* Celular */
+@media (max-width: 767px) {
+
+    .social-section {
+        padding: 55px 0;
+    }
+
+    .social-content {
+        padding: 30px 20px;
+    }
+
+    .social-photo {
+        height: 240px;
+    }
+
+    .social-content h3 {
+        font-size: 25px;
+    }
+
+    .wedding-hashtag {
+        font-size: 22px;
+    }
+
+    .qr-code {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* Galeria */
+.gallery-section {
+    background: #faf8f4;
+    padding: 80px 0;
+}
+
+.gallery-subtitle {
+    margin-top: 8px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    color: #777;
+}
+
+
+/* GRID AUTOMÁTICO */
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 14px;
+}
+
+
+/* Cada foto */
+.gallery-item {
+    position: relative;
+
+    width: 100%;
+    height: 280px;
+
+    overflow: hidden;
+
+    background: #eee;
+}
+
+
+/* Imagen */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* Overlay */
+.gallery-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0,0,0,0.25);
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+}
+
+
+.gallery-overlay i {
+    font-size: 28px;
+    color: white;
+}
+
+
+/* Hover */
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    .gallery-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* Celular */
+@media (max-width: 600px) {
+
+    .gallery-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 8px;
+    }
+
+    .gallery-item {
+        height: 190px;
+    }
+}

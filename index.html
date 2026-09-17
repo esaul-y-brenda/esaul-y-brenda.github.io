@@ -145,25 +145,62 @@
     </div>
 </section>
 
-<div id="countdown">
-  <div class="box"><span id="days">00</span><small>DÍAS</small></div>
-  <div class="box"><span id="hours">00</span><small>HORAS</small></div>
-  <div class="box"><span id="minutes">00</span><small>MIN</small></div>
-  <div class="box"><span id="seconds">00</span><small>SEG</small></div>
-</div>
+<section id="save-the-date">
 
-<style>
-#countdown {
-  display: flex; gap: 12px; justify-content: center;
-  font-family: system-ui, sans-serif;
-}
-#countdown .box {
-  background: #111; color: #fff; border-radius: 16px;
-  padding: 16px 18px; min-width: 80px; text-align: center;
-}
-#countdown span { display: block; font-size: 32px; font-weight: 700; line-height: 1; }
-#countdown small { opacity: 0.7; font-size: 11px; letter-spacing: 1px; }
-</style>
+    <div class="save-overlay"></div>
+
+    <div class="save-content">
+
+        <h2 class="save-title">Save the Date</h2>
+
+        <p class="save-date">3 Enero 2027</p>
+
+        <div id="countdown">
+
+            <div class="count-box">
+                <span id="days">00</span>
+                <small>DÍAS</small>
+            </div>
+
+            <div class="count-box">
+                <span id="hours">00</span>
+                <small>HORAS</small>
+            </div>
+
+            <div class="count-box">
+                <span id="minutes">00</span>
+                <small>MIN</small>
+            </div>
+
+            <div class="count-box">
+                <span id="seconds">00</span>
+                <small>SEG</small>
+            </div>
+
+        </div>
+
+        <div class="calendar-section">
+
+            <h3>Agrégalo a tu calendario</h3>
+
+            <div class="calendar-buttons">
+
+                <a href="#" class="calendar-btn">
+                    IOS Y PC
+                </a>
+
+                <a href="#" class="calendar-btn">
+                    GOOGLE CALENDAR
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <script>
 // ¡CAMBIA ESTO! Pon fecha de tu evento. Formato ISO con zona horaria de España
@@ -193,27 +230,86 @@ updateCountdown();
 setInterval(updateCountdown, 1000);
 </script>
 
-<section id="intro">
+<!-- Historia de un amor-->
+<section id="intro" class="section-padding story-section">
+
     <div class="container">
+
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3 class="header">Nuestra historia de amor</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/Brendita.jpg" class="wp1"></div>
-            <div class="col-md-6">
-                <p>
-                    Nos conocimos por primera vez al inicio de nuestra maestría. Esaul se sintió instantaneamente atraído por Brendita, pero era muy tímido para hablar con ella. Gracias a amigos en común empezamos a vernos cada vez más seguido y la proximidad hizo que cupido se  apiadara de Esaul flechando a Brenda. Tuvimos nuestra primera cita en diciembre de 2023 y somos oficialmente novios desde el 9 de marzo de 2024.
-                </p>
+
+        <div class="row story-row">
+
+            <div class="col-md-3 hidden-sm hidden-xs text-center">
+                <img src="img/Brendita.jpg" class="story-photo wp1" alt="Brendita">
+                <p class="story-name">Brendita</p>
             </div>
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/Esaul.jpg" class="wp2"></div>
+
+            <div class="col-md-6">
+
+                <div class="story-card">
+
+                    <p>
+                        El destino hizo que nuestros caminos se cruzaran desde lugares muy distintos:
+                        Esaúl, desde San Julián, en los Altos de Jalisco, y Brenda, desde la Ciudad de México.
+                        Sin saberlo, ambos terminaríamos coincidiendo en el mismo lugar y en el momento perfecto.
+                    </p>
+
+                    <p>
+                        Nos conocimos al inicio de nuestra maestría. Esaúl se sintió atraído por Brendita
+                        casi desde el primer momento, aunque la timidez no le hacía precisamente fácil
+                        acercarse a hablar con ella.
+                    </p>
+
+                    <p>
+                        Por suerte, los amigos en común hicieron lo suyo y empezamos a coincidir cada vez más.
+                        Entre conversaciones, convivencias y momentos compartidos, la cercanía fue haciendo
+                        su magia, hasta que Cupido decidió apiadarse de Esaúl y también flechó a Brenda.
+                    </p>
+
+                    <p>
+                        Nuestra primera cita llegó en diciembre de 2023 y, unos meses después,
+                        el <strong>9 de marzo de 2024</strong>, comenzamos oficialmente esta historia como novios.
+                    </p>
+
+                    <div class="story-divider">♡</div>
+
+                    <p class="story-ending">
+                        Y desde entonces, entre viajes, risas, aprendizajes y muchos planes juntos,
+                        hemos seguido construyendo la historia que hoy nos trae hasta aquí.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3 hidden-sm hidden-xs text-center">
+                <img src="img/Esaul.jpg" class="story-photo wp2" alt="Esaúl">
+                <p class="story-name">Esaúl</p>
+            </div>
+
         </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/Brendita.jpg" class="wp8"></div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/Esaul.jpg" class="wp9"></div>
+
+        <!-- Fotos en celular/tablet -->
+        <div class="row hidden-md hidden-lg mobile-story-photos">
+
+            <div class="col-xs-6 text-center">
+                <img src="img/Brendita.jpg" class="story-photo wp8" alt="Brendita">
+                <p class="story-name">Brendita</p>
+            </div>
+
+            <div class="col-xs-6 text-center">
+                <img src="img/Esaul.jpg" class="story-photo wp9" alt="Esaúl">
+                <p class="story-name">Esaúl</p>
+            </div>
+
         </div>
+
     </div>
+
 </section>
 
 <!-- Plan del dia-->
@@ -267,189 +363,6 @@ setInterval(updateCountdown, 1000);
 
 
 <!-- Fin del cronograma-->
-            
-        <div class="row section-padding">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Código de vestimenta
-                </a>
-            </div>
-        </div>
-
-
-        <!--<div class="row">
-            <div class="col-xs-12 section-border section-padding">
-            </div>
-        </div>-->
-    </div>
-
-    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding">Código: Formal/Casual</h3>
-                    
-                    <p> <br> La idea es ir guapos y elegantes, pero no superar  a los novios :) <br> </p>
-
-                    
-                    <p class="text-center">
-                        <strong> Ejemplos de outfit para el gran día: </strong>
-                    </p>
-
-                    <p class="text-center">
-    <img src="https://i.imgur.com/ByIc1le.jpeg" style="width: 300px; height: auto;" /> <br>
-    <br>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoh9gNr-bEaYS99tjSmP48-0pc1wN_9QzulfRIH0sVjr8cRkyLPBguK9s&s=10" style="width: 300px; height: auto;" />
-</p>
-
-                    
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-</section>
-
-<!-- /.fotos -->
-<section id="instagram" class="section-padding">
-    <div class="row section-border wp7">
-            <div class="col-md-4 col-md-offset-4">
-                <img src="https://pbs.twimg.com/media/EbDD5MpXQAAstte.jpg">
-            </div>
-        </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>¡Una imagen vale más que mil palabras!</h3>
-                <p>Ayúdanos a capturar nuestra historia de amor. Etiqueta tus fotos de instagram con el hashtag 
-                    <a href="https://instagram.com/explore/tags/esaulybrendita/" target="_blank">#EsaulyBrendita</a>
-                </p>
-                
-                
-
-                <p> También agrega tus fotos a nuestro álbum compartido en Google Photos. Lee este QR para ir ahí </p>
-
-                <img src="img/qr.png" class="qr-code" alt="QR Google Photos" width="200" height="200">
-            </div>
-        </div>
-
-        <style>
-.qr-code {
-  width: 200px;
-  height: 200px;
-  min-width: 200px; /* prevents flex/grid from squeezing it */
-  min-height: 200px;
-  flex-shrink: 0; /* important if inside .row which is flex */
-  object-fit: contain; /* never crop a QR */
-  display: block;
-  margin: 15px auto; /* centers it because of text-center */
-  image-rendering: pixelated; /* keeps QR sharp */
-  border-radius: 0; /* don't round a QR */
-}
-</style>
-        
-<!-- fin --> 
-    </div>
-</section>
-
-<section id="eng-pics" class="section-padding">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Galería</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/de_lado.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/de_lado.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/hero-min_2.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/hero-min_2.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/carrusel5.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/carrusel5.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/carrusel6.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/carrusel6.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/viendo.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/viendo.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/carrusel10.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/carrusel10.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-    
-
-        </div>
-    </div>
-    <div class="container">
-        <div class="row hidden-lg hidden-md hidden-xs">
-            <div class="col-xs-12 section-border section-padding"></div>
-        </div>
-    </div>
-    <!--<div class="row">
-        <div class="col-md-12">
-            <div class="diamond floating-logo">
-                <img src="img/sketch-logo.png" alt="Sketch Logo">
-                <div class="ring"></div>
-            </div>
-        </div>
-    </div>-->
-</section>
-
-<section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/9giqL1H6yRs',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
-    </div>
-    <div id="video-content">
-        <h5>Ciudad de México</h5>
-        <p>Ciudad de alegría</p>
-    </div>
-</section>
-
 
 <!-- MAPA --> 
 <section id="map" class="section-padding">
@@ -533,6 +446,264 @@ setInterval(updateCountdown, 1000);
 
 </section>
 <!-- fin --> 
+
+            
+
+<!-- Condigo de Vestimenta -->
+<section id="dress-code" class="dress-code-section">
+
+    <div class="dress-overlay"></div>
+
+    <div class="container dress-content">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+
+                <h2 class="dress-title">Código de vestimenta</h2>
+
+                <p class="dress-subtitle">Formal</p>
+
+                <p class="dress-text">
+                    La idea es ir guapos y elegantes,
+                    pero sin superar a los novios 😉
+                </p>
+
+            </div>
+        </div>
+
+        <div class="row dress-examples">
+
+            <div class="col-md-4 col-md-offset-2 col-sm-6 text-center">
+
+                <div class="dress-card">
+                    <img
+                        src="img/octavio.jpg"
+                        alt="Ejemplo de vestimenta formal para hombre"
+                    >
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-6 text-center">
+
+                <div class="dress-card">
+                    <img
+                        src="img/mabel.png"
+                        alt="Ejemplo de vestimenta formal para mujer"
+                    >
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- fin codigo de vestimenta -->
+
+
+<section id="instagram" class="section-padding social-section">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+
+                <div class="social-card">
+
+                    <img
+                        src="https://pbs.twimg.com/media/EbDD5MpXQAAstte.jpg"
+                        class="social-photo"
+                        alt="Comparte tus recuerdos con nosotros"
+                    >
+
+                    <div class="social-content">
+
+                        <h3>¡Queremos ver la boda desde tus ojos! 💕</h3>
+
+                        <p>
+                            Ayúdanos a guardar todos esos momentos especiales.
+                            Comparte tus fotos en Instagram usando:
+                        </p>
+
+                        <a
+                            href="https://instagram.com/explore/tags/esaulybrendita/"
+                            target="_blank"
+                            class="wedding-hashtag"
+                        >
+                            #EsaulyBrendita
+                        </a>
+
+                        <div class="album-box">
+
+                            <p>
+                                También puedes subir tus fotos directamente
+                                a nuestro álbum compartido en Google Photos.
+                            </p>
+
+                            <p class="qr-text">
+                                Escanea el código y déjanos tus recuerdos ✨
+                            </p>
+
+                            <img
+                                src="img/qr.png"
+                                class="qr-code"
+                                alt="QR de Google Photos"
+                            >
+
+                        </div>
+
+                        <p class="social-ending">
+                            Queremos guardar cada momento de este día,
+                            incluso aquellos que nosotros no alcancemos a ver. ♡
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Hospedaje -->
+
+<!-- Hospedaje -->
+
+
+<!-- Galeria -->
+<section id="eng-pics" class="section-padding gallery-section">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Galería</h3>
+                <p class="gallery-subtitle">
+                    Algunos de nuestros momentos favoritos ♡
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery-grid">
+
+            <a class="fancybox" rel="group" href="img/eng_pics/de_lado.jpg">
+                <div class="gallery-item">
+                    <img src="img/eng_pics/de_lado.jpg" alt="Galería 1">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a class="fancybox" rel="group" href="img/eng_pics/hero-min_2.jpg">
+                <div class="gallery-item">
+                    <img src="img/eng_pics/hero-min_2.jpg" alt="Galería 2">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a class="fancybox" rel="group" href="img/eng_pics/carrusel5.jpg">
+                <div class="gallery-item">
+                    <img src="img/eng_pics/carrusel5.jpg" alt="Galería 3">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a class="fancybox" rel="group" href="img/eng_pics/carrusel6.jpg">
+                <div class="gallery-item">
+                    <img src="img/eng_pics/carrusel6.jpg" alt="Galería 4">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a class="fancybox" rel="group" href="img/eng_pics/viendo.jpg">
+                <div class="gallery-item">
+                    <img src="img/eng_pics/viendo.jpg" alt="Galería 5">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a class="fancybox" rel="group" href="img/eng_pics/carrusel10.jpg">
+                <div class="gallery-item">
+                    <img src="img/eng_pics/carrusel10.jpg" alt="Galería 6">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Solo duplica este bloque para agregar más fotos -->
+
+            <a class="fancybox" rel="group" href="img/eng_pics/airport.jpeg">
+                <div class="gallery-item">
+                    <img src="img/eng_pics/airport.jpeg" alt="Galería 7">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a class="fancybox" rel="group" href="img/eng_pics/oasis.jpg">
+                <div class="gallery-item">
+                    <img src="img/eng_pics/oasis.jpg" alt="Galería 8">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+
+                        <a class="fancybox" rel="group" href="img/eng_pics/feli.jpg">
+                <div class="gallery-item">
+                    <img src="img/eng_pics/feli.jpg" alt="Galería 9">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a class="fancybox" rel="group" href="img/eng_pics/elbeso.jpg">
+                <div class="gallery-item">
+                    <img src="img/eng_pics/elbeso.jpg" alt="Galería 8">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Fin de galeria -->
+
+
+<section id="video-bg" class="hidden-sm hidden-xs">
+    <div id="bgndVideo" class="player"
+         data-property="{videoURL:'https://youtu.be/9giqL1H6yRs',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
+    </div>
+    <div id="video-content">
+        <h5>Ciudad de México</h5>
+        <p>Ciudad de alegría</p>
+    </div>
+</section>
+
+
 
 
 
@@ -650,12 +821,12 @@ setInterval(updateCountdown, 1000);
                         <div class="bank-data">
                             <div class="bank-row">
                                 <span class="bank-label">Beneficiario</span>
-                                <span class="bank-value">[Nombre]</span>
+                                <span class="bank-value">Juan Esaul Gonzalez Rangel</span>
                             </div>
 
                             <div class="bank-row">
                                 <span class="bank-label">Banco</span>
-                                <span class="bank-value">[Banco]</span>
+                                <span class="bank-value">  BBVA</span>
                             </div>
 
                             <div class="bank-row">
