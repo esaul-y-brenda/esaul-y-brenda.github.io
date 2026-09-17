@@ -149,3 +149,205 @@ header .member-actions a {
         0 1px 2px rgba(0, 0, 0, 0.45),
         0 3px 6px rgba(0, 0, 0, 0.25);
 }
+
+#map {
+    padding-bottom: 70px;
+}
+
+#map h3 {
+    margin-bottom: 10px;
+}
+
+.map-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+/* MUY IMPORTANTE:
+   el mapa necesita una altura */
+#map-canvas {
+    width: 100%;
+    height: 420px;
+    margin-top: 30px;
+}
+
+
+/* Tarjeta debajo del mapa */
+.map-info-container {
+    margin-top: -55px;
+    position: relative;
+    z-index: 10;
+}
+
+.map-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.map-card h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.map-card p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.map-buttons {
+    margin-top: 20px;
+}
+
+.map-buttons .btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/* Celular */
+@media (max-width: 767px) {
+
+    #map-canvas {
+        height: 320px;
+    }
+
+    .map-info-container {
+        margin-top: -30px;
+    }
+
+    .map-card {
+        padding: 25px 18px;
+        margin: 0 10px;
+    }
+}
+
+
+#invitation {
+    padding: 90px 0;
+    background: #faf8f6;
+}
+
+#invitation h3 {
+    font-size: 32px;
+    line-height: 1.4;
+    margin: 15px 0 30px;
+}
+
+.invitation-small {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.invitation-text {
+    max-width: 650px;
+    margin: 0 auto 18px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.invitation-final {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.invitation-heart {
+    margin-top: 25px;
+    font-size: 28px;
+}
+
+
+/* Carrusel semsual*/
+#final-carousel {
+    padding: 80px 0;
+}
+
+#weddingFinalCarousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.18);
+}
+
+#weddingFinalCarousel .carousel-inner .item img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Oscurece ligeramente la foto para que se lea el texto */
+#weddingFinalCarousel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.60),
+        rgba(0, 0, 0, 0.05) 55%,
+        rgba(0, 0, 0, 0.10)
+    );
+    pointer-events: none;
+    z-index: 2;
+}
+
+.final-carousel-text {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    text-align: center;
+    color: white;
+    padding: 0 25px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+}
+
+.final-carousel-text p {
+    margin-bottom: 8px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.final-carousel-text h2 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.final-carousel-text span {
+    display: block;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.carousel-control {
+    z-index: 6;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    #weddingFinalCarousel .carousel-inner .item img {
+        height: 520px;
+    }
+
+    .final-carousel-text {
+        bottom: 55px;
+    }
+
+    .final-carousel-text h2 {
+        font-size: 34px;
+    }
+
+    .final-carousel-text p {
+        font-size: 12px;
+    }
+}
