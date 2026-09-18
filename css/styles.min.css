@@ -495,6 +495,16 @@ header .member-actions a {
     color: #f6e3b4; /* crema doradito */
 }
 
+@media (max-width: 768px) {
+
+    #save-the-date {
+        background-size: auto 90%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+}
+
 /* Contador */
 #countdown {
     display: flex;
@@ -596,6 +606,24 @@ header .member-actions a {
     border-color: #e8c36a;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+
+    .calendar-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .calendar-btn {
+        min-width: 220px;
+        padding: 12px 18px;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        border-radius: 30px;
+    }
+}
+
 
 /* CODIGO DE VESTIMENTA*/
 .dress-code-section {
@@ -984,5 +1012,108 @@ header .member-actions a {
 
     100% {
         transform: scale(1);
+    }
+}
+
+
+/* SPAM */
+.nyx-spam {
+    width: 100%;
+    padding: 80px 20px;
+    background: #ececec;
+    text-align: center;
+}
+
+.spam-card {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 35px 30px;
+
+    background: #fffbe6;
+
+    border: 5px dashed red;
+
+    box-shadow:
+        0 0 0 8px yellow,
+        0 0 30px rgba(0,0,0,.25);
+
+    font-family: Arial, sans-serif;
+}
+
+.spam-alert {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    animation: spamBlink .7s infinite;
+}
+
+.spam-card h2 {
+    font-size: 35px;
+    color: blue;
+    margin: 20px 0;
+}
+
+.spam-money {
+    font-size: 26px;
+    color: green;
+}
+
+.spam-instruction {
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+    margin: 25px 0 10px;
+}
+
+.spam-timer {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#spam-countdown {
+    display: block;
+    margin-top: 10px;
+
+    font-size: 32px;
+    color: red;
+
+    animation: spamBlink .5s infinite;
+}
+
+.nyx-click {
+    width: 250px;
+    max-width: 80%;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+
+    transition: transform .2s ease;
+}
+
+.nyx-click:hover {
+    transform: scale(1.08);
+}
+
+.nyx-click:active {
+    transform: scale(.95);
+}
+
+.spam-small {
+    margin-top: 25px;
+
+    font-size: 10px !important;
+
+    color: #777 !important;
+}
+
+@keyframes spamBlink {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .25;
     }
 }

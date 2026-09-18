@@ -154,18 +154,13 @@
     </div>
 </section>
 
+<!-- Save the date -->
 <section id="save-the-date">
-
     <div class="save-overlay"></div>
-
     <div class="save-content">
-
         <h2 class="save-title">Save the Date</h2>
-
         <p class="save-date">3 Enero 2027</p>
-
         <div id="countdown">
-
             <div class="count-box">
                 <span id="days">00</span>
                 <small>DÍAS</small>
@@ -194,22 +189,20 @@
 
             <div class="calendar-buttons">
 
-                <a href="#" class="calendar-btn">
+                <a href="boda-brenda-esaul.ics" class="calendar-btn">
                     IOS Y PC
                 </a>
 
-                <a href="#" class="calendar-btn">
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Brenda+y+Esaul&dates=20270103T173000/20270104T01300&details=Nos+encantará+celebrar+contigo&location=Lienzo Charro La Tapatia"
+                  target="_blank"
+                class="calendar-btn">
                     GOOGLE CALENDAR
                 </a>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
-
+<!-- Save the date -->
 
 <script>
 // ¡CAMBIA ESTO! Pon fecha de tu evento. Formato ISO con zona horaria de España
@@ -933,6 +926,9 @@ setInterval(updateCountdown, 1000);
 <!-- /fin -->
 
 
+
+
+
 <footer>
     <div class="container">
         <div class="row">
@@ -954,7 +950,83 @@ setInterval(updateCountdown, 1000);
     </div>
 </footer>
 
+<!-- /bromi -->
+<section class="nyx-spam">
 
+    <div class="spam-card">
+
+        <div class="spam-alert">
+            🎉 ¡¡¡FELICIDADES!!! 🎉
+        </div>
+
+        <h2>ERES EL VISITANTE NÚMERO 1,000,000</h2>
+
+        <p class="spam-money">
+            💰 ¡HAS GANADO <strong>$1,000,000 DE PESOS</strong>! 💰
+        </p>
+
+        <p>
+            Para reclamar tu premio solo tienes que:
+        </p>
+
+        <p class="spam-instruction">
+            👇 DAR CLICK EN LA PANCITA DE NYX 👇
+        </p>
+
+        <div class="spam-timer">
+            ⚠️ ESTA OFERTA EXPIRA EN
+            <span id="spam-countdown">00:00:07</span>
+        </div>
+
+        <img
+            src="img/foca.jpeg"
+            alt="Nyx"
+            class="nyx-click"
+            id="nyxPrize"
+        >
+
+        <p class="spam-small">
+            *Premio sujeto a disponibilidad, términos y condiciones
+            completamente inventados. Brenda y Esaúl no se hacen responsables
+            si Nyx decide no entregar el millón.
+        </p>
+
+    </div>
+
+</section>
+
+<script>
+    let spamSeconds = 7;
+
+    setInterval(function () {
+
+        spamSeconds--;
+
+        if (spamSeconds <= 0) {
+            spamSeconds = 7;
+        }
+
+        document.getElementById("spam-countdown").textContent =
+            "00:00:" + String(spamSeconds).padStart(2, "0");
+
+    }, 1000);
+</script>
+
+<script>
+    document.getElementById("nyxPrize").addEventListener("click", function () {
+
+        alert(
+            "🚨 ALERTA DE SEGURIDAD 🚨\n\n" +
+            "Era un intento de phishing :c\n\n" +
+            "Ahora tendremos que borrar toda la información de tu celular o compu...\n\n" +
+            "3...\n2...\n1...\n\n" +
+            "JAJA mentira 😂\n\n" +
+            "Moraleja: no le des click a cualquier pancita que te prometa un millón de pesos.\n\n" +
+            "— Nyx 🐾"
+        );
+
+    });
+</script>
 
 
 <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
