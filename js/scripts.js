@@ -491,3 +491,42 @@ var MD5 = function (string) {
 
     return temp.toLowerCase();
 };
+
+
+var music = document.getElementById("wedding-music");
+var musicBtn = document.getElementById("music-btn");
+
+musicBtn.addEventListener("click", function () {
+
+    if (music.paused) {
+
+        music.play();
+
+        musicBtn.innerHTML = '<i class="fa fa-pause"></i>';
+        musicBtn.classList.add("playing");
+
+    } else {
+
+        music.pause();
+
+        musicBtn.innerHTML = '<i class="fa fa-music"></i>';
+        musicBtn.classList.remove("playing");
+
+    }
+
+});
+
+document.addEventListener("click", function iniciarMusica() {
+
+    music.play().then(function () {
+
+        musicBtn.innerHTML = '<i class="fa fa-pause"></i>';
+        musicBtn.classList.add("playing");
+
+    }).catch(function () {
+        // El navegador no permitió reproducirla todavía.
+    });
+
+    document.removeEventListener("click", iniciarMusica);
+
+}, { once: true });

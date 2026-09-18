@@ -60,6 +60,17 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
+
+<!-- MUSICA-->
+<audio id="wedding-music" loop>
+    <source src="music/Los Tigres Del Norte - Contrabando Y Traición Audio.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+</audio>
+
+<button id="music-btn" class="music-btn" type="button">
+    <i class="fa fa-music"></i>
+</button>
+<!-- MUSICA-->
 <body id="top">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
@@ -945,8 +956,10 @@ setInterval(updateCountdown, 1000);
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+<script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
 <!-- Google Analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
