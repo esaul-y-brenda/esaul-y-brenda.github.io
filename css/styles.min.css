@@ -942,30 +942,27 @@ header .member-actions a {
     }
 }
 
-
 /* MUSICA */
 .music-btn {
     position: fixed;
     right: 25px;
     bottom: 25px;
 
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
 
     border: none;
     border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.9);
     color: #333;
 
-    font-size: 20px;
+    font-size: 18px;
 
-    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.20);
 
     z-index: 9999;
     cursor: pointer;
-
-    transition: all 0.3s ease;
 }
 
 .music-btn:hover {
@@ -973,14 +970,19 @@ header .member-actions a {
 }
 
 .music-btn.playing {
-    animation: music-spin 4s linear infinite;
+    animation: musicPulse 2s infinite;
 }
 
-@keyframes music-spin {
-    from {
-        transform: rotate(0deg);
+@keyframes musicPulse {
+    0% {
+        transform: scale(1);
     }
-    to {
-        transform: rotate(360deg);
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }

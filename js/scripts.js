@@ -493,30 +493,12 @@ var MD5 = function (string) {
 };
 
 
-var music = document.getElementById("wedding-music");
+var music = document.getElementById("background-music");
 var musicBtn = document.getElementById("music-btn");
 
-musicBtn.addEventListener("click", function () {
+music.volume = 0.5;
 
-    if (music.paused) {
-
-        music.play();
-
-        musicBtn.innerHTML = '<i class="fa fa-pause"></i>';
-        musicBtn.classList.add("playing");
-
-    } else {
-
-        music.pause();
-
-        musicBtn.innerHTML = '<i class="fa fa-music"></i>';
-        musicBtn.classList.remove("playing");
-
-    }
-
-});
-
-document.addEventListener("click", function iniciarMusica() {
+function iniciarMusica() {
 
     music.play().then(function () {
 
@@ -524,9 +506,30 @@ document.addEventListener("click", function iniciarMusica() {
         musicBtn.classList.add("playing");
 
     }).catch(function () {
-        // El navegador no permitió reproducirla todavía.
+        // El navegador bloqueó la reproducción.
     });
+}
 
-    document.removeEventListener("click", iniciarMusica);
+document.addEventListener("click", iniciarMusica, {
+    once: true
+});
 
-}, { once: true });
+musicBtn.addEventListener("click", function (event) {
+
+    event.stopPropagation();
+
+    if (music.paused) {
+
+        music.play();
+        musicBtn.innerHTML = '<i class="fa fa-pause"></i>';
+        musicBtn.classList.add("playing");
+
+    } else {
+
+        music.pause();
+        musicBtn.innerHTML = '<i class="fa fa-music"></i>';
+        musicBtn.classList.remove("playing");
+
+    }
+
+});
