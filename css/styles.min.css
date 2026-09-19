@@ -175,6 +175,24 @@ header .member-actions a {
     margin-top: 30px;
 }
 
+.map-embed {
+    width: 100%;
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+.map-embed iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+@media (max-width: 767px) {
+    .map-embed iframe {
+        height: 350px;
+    }
+}
 
 /* Tarjeta debajo del mapa */
 .map-info-container {
@@ -870,104 +888,114 @@ header .member-actions a {
 }
 
 /* Galeria */
+/* ============================================================
+   GALERÍA MASONRY
+   ============================================================ */
+
 .gallery-section {
-    background: #faf8f4;
-    padding: 80px 0;
+    padding: 90px 0;
+    background: #faf8f5;
 }
 
 .gallery-subtitle {
-    margin-top: 8px;
-    margin-bottom: 35px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     font-size: 16px;
     color: #777;
 }
 
 
-/* GRID AUTOMÁTICO */
-.gallery-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-
-    gap: 14px;
+/* columnas tipo Pinterest */
+.masonry-gallery {
+    column-count: 4;
+    column-gap: 18px;
 }
 
 
-/* Cada foto */
-.gallery-item {
-    position: relative;
-    width: 100%;
+/* cada fotografía */
+.masonry-gallery a {
+    display: block;
+
+    margin-bottom: 18px;
+
+    break-inside: avoid;
+
     overflow: hidden;
-    background: #eee;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.10);
+
+    background: #fff;
 }
 
-.gallery-item img {
+
+/* importante:
+   NO fijamos height
+   así conserva el tamaño/proporción original */
+.masonry-gallery img {
     width: 100%;
     height: auto;
+
     display: block;
-    transition: transform 0.4s ease;
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
 }
 
 
-/* Overlay */
-.gallery-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: rgba(0,0,0,0.25);
-
-    opacity: 0;
-
-    transition: opacity 0.3s ease;
+.masonry-gallery a:hover img {
+    transform: scale(1.025);
+    filter: brightness(0.92);
 }
 
 
-.gallery-overlay i {
-    font-size: 28px;
-    color: white;
-}
+/* ============================================================
+   TABLET
+   ============================================================ */
 
-
-/* Hover */
-.gallery-item:hover img {
-    transform: scale(1.06);
-}
-
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
-}
-
-
-/* Tablet */
 @media (max-width: 991px) {
 
-    .gallery-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+    .masonry-gallery {
+        column-count: 3;
+        column-gap: 15px;
+    }
+
+    .masonry-gallery a {
+        margin-bottom: 15px;
     }
 
 }
 
 
-/* Celular */
-@media (max-width: 600px) {
+/* ============================================================
+   MOBILE
+   ============================================================ */
 
-    .gallery-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+@media (max-width: 767px) {
 
-        gap: 8px;
+    .masonry-gallery {
+        column-count: 2;
+        column-gap: 12px;
     }
 
-    .gallery-item {
-        height: 190px;
+    .masonry-gallery a {
+        margin-bottom: 12px;
+        border-radius: 12px;
     }
+
+}
+
+
+/* celulares pequeños */
+@media (max-width: 480px) {
+
+    .masonry-gallery {
+        column-count: 1;
+    }
+
 }
 
 /* MUSICA */
