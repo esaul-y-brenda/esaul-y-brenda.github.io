@@ -340,6 +340,7 @@ header .member-actions a {
     margin: 0;
     font-size: 48px;
     font-weight: 600;
+    color: white;
 }
 
 .final-carousel-text span {
@@ -517,9 +518,10 @@ header .member-actions a {
 
     #save-the-date {
         background-size: auto 90%;
-        background-position: center center;
+        background-position: 35% center;
         background-repeat: no-repeat;
     }
+    
 
 }
 
@@ -656,7 +658,7 @@ header .member-actions a {
 
     background-image: url("../img/relleno.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: 90% center;
     background-repeat: no-repeat;
 
     display: flex;
@@ -1145,3 +1147,6 @@ header .member-actions a {
         opacity: .25;
     }
 }
+
+/* -----SOBRE -----*/
+/
