@@ -534,3 +534,12 @@ musicBtn.addEventListener("click", function (event) {
 
 });
 
+
+
+$("#open-invitation").on("click", function () {
+
+    $("#video-intro").fadeOut(900);
+
+    $("body").css("overflow", "auto");
+
+});

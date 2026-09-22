@@ -71,10 +71,41 @@
 
 <body id="top">
 
-<!-- EVENTO DE SOBRE -->
+<!-- EVENTO DE video -->
+<!-- Pantalla de entrada -->
+<div id="video-intro">
+
+    <video
+        id="intro-video"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source src="video/0922(2).mov" type="video/mp4">
+    </video>
+
+    <div class="intro-overlay">
+        <div class="intro-content">
+
+            <h2>Brenda & Esaúl</h2>
+
+            <p>
+                Las verdaderas historias de amor no tienen final.
+            </p>
+
+            <button id="open-invitation">
+                Abrir invitación
+            </button>
+
+        </div>
+    </div>
+
+</div>
 
 
-<!--[if lt IE 8]>
+<!-- fin video >
+
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <! ESTE ES INICIO DE LA INVITACION  -->
@@ -307,57 +338,74 @@ setInterval(updateCountdown, 1000);
 
 </section>
 
-<!-- Plan del dia-->
+<!-- Plan del día -->
 <section class="events section-padding" id="events">
+
     <div class="container">
+
         <div class="row">
             <div class="col-md-12">
                 <h3 class="header">Plan del día</h3>
             </div>
         </div>
-<!-- Cronograma-->
+
+        <!-- Cronograma -->
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
 
-                <div class="wp5">
-                    <p><strong>3 de enero de 2027</strong></p>
+                <div class="day-timeline">
 
-                    <h5>
-                        Ceremonia religiosa
-                        <span class="time">5:30PM - 6:30PM</span>
-                    </h5>
-                    <p>Capilla del Lienzo Charro La Tapatía.</p>
-                </div>
+                    <div class="wp5 timeline-item">
+                        <p><strong>3 de enero de 2027</strong></p>
 
-                <div class="wp5">
-                    <h5>
-                        Recepción
-                        <span class="time">6:30PM - 7:00PM</span>
-                    </h5>
-                    <p>Salón Jardín, Lienzo Charro La Tapatía.</p>
-                </div>
+                        <h5>
+                            Ceremonia religiosa
+                            <span class="time">5:30PM - 6:30PM</span>
+                        </h5>
 
-                <div class="wp5">
-                    <h5>
-                        Inicio de la celebración
-                        <span class="time">7:00PM</span>
-                    </h5>
-                    <p>¡Ahora sí, a celebrar! </p>
-                </div>
+                        <p>Capilla del Lienzo Charro La Tapatía.</p>
+                    </div>
 
-                <div class="wp5">
-                    <h5>
-                        Fin del evento
-                        <span class="time">1:00AM</span>
-                    </h5>
-                    <p>Hora de despedirnos después de una gran noche</p>
+                    <div class="wp5 timeline-item">
+
+                        <h5>
+                            Recepción
+                            <span class="time">6:30PM - 7:00PM</span>
+                        </h5>
+
+                        <p>Salón Jardín, Lienzo Charro La Tapatía.</p>
+                    </div>
+
+                    <div class="wp5 timeline-item">
+
+                        <h5>
+                            Inicio de la celebración
+                            <span class="time">7:00PM</span>
+                        </h5>
+
+                        <p>¡Ahora sí, a celebrar!</p>
+                    </div>
+
+                    <div class="wp5 timeline-item">
+
+                        <h5>
+                            Fin del evento
+                            <span class="time">1:00AM</span>
+                        </h5>
+
+                        <p>Hora de despedirnos después de una gran noche.</p>
+                    </div>
+
                 </div>
 
             </div>
         </div>
 
+        <!-- Fin del cronograma -->
 
-<!-- Fin del cronograma-->
+    </div>
+
+</section>
 
 <!-- MAPA --> 
 <section id="map" class="section-padding">
@@ -769,9 +817,7 @@ setInterval(updateCountdown, 1000);
                         Y como próximamente nos espera una pequeña gran mudanza a
                         <strong>Francia 🇫🇷</strong>, preferimos viajar ligeros y evitar
                         sumar una licuadora a la maleta. 😅
-                    </p>
-
-                    <p>
+                    <br>
                         Por eso, no tendremos mesa de regalos. Pero si aun así te nace
                         hacernos un detalle, puedes contribuir de manera voluntaria
                         a nuestra nueva aventura juntos.
@@ -797,7 +843,7 @@ setInterval(updateCountdown, 1000);
                             <div class="bank-row">
                                 <span class="bank-label">CLABE</span>
                                 <span class="bank-value clabe">
-                                    0000 0000 0000 0000 00
+                                    0122 1001 5306 5045 07
                                 </span>
                             </div>
                         </div>
