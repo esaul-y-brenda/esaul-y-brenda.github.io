@@ -1722,3 +1722,93 @@ body {
     font-size: 14px;
   }
 }
+
+/* Google forms */
+.wedding-survey {
+  background: #faf8f3;
+  padding: 75px 20px;
+  text-align: center;
+  font-family: inherit;
+}
+
+.survey-heading h2 {
+  color: #414653;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 18px 0 8px;
+}
+
+.survey-eyebrow {
+  color: #c9a64d;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.survey-subtitle { color: #8c8990; }
+
+.survey-divider {
+  background: #e8c96d;
+  width: 65px;
+  height: 2px;
+  margin: 24px auto;
+}
+
+.survey-intro {
+  max-width: 620px;
+  margin: 0 auto 35px;
+  color: #676b73;
+  line-height: 1.9;
+}
+
+.survey-intro p { margin-bottom: 14px; }
+
+.survey-card {
+  max-width: 760px;
+  margin: auto;
+  background: white;
+  border: 1px solid #eee7d9;
+  border-radius: 12px;
+  padding: 24px 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.035);
+}
+
+.survey-card h3 {
+  color: #61616b;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.survey-card iframe {
+  display: block;
+  width: 100%;
+  height: 900px;
+  border: 0;
+}
+
+.survey-button {
+  display: inline-block;
+  background: #e9cb71;
+  color: white;
+  text-decoration: none;
+  padding: 17px 35px;
+  margin: 28px auto 18px;
+  border-radius: 4px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: background .2s;
+}
+
+.survey-button:hover { background: #d6b75e; }
+
+.survey-footer {
+  color: #99959b;
+  font-size: 12px;
+}
+
+@media(max-width: 600px) {
+  .wedding-survey { padding: 50px 14px; }
+  .survey-heading h2 { font-size: 19px; }
+  .survey-card { padding: 16px 4px; }
+  .survey-card iframe { height: 1100px; }
+}
